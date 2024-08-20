@@ -1,8 +1,32 @@
-const fs = require('fs');
+import fs from 'node:fs';
 
 const PATH = './example.txt';
 
 const readStream = fs.createReadStream(PATH);
+
+// Using of Callback
+const handleReadFileData = (err, data) => {
+  if (err) {
+    throw new err;
+  }
+
+  // Logs: Hello World!
+  console.log(data);
+  // If remove 'utf8' then the output would be:
+  // <Buffer 48 65 6c 6c 6f 20 57 6f 72 6c 64 21>
+
+  // Logs: "Hello World!" if calling a method "toString()"
+  console.log(data.toString());
+}
+
+function readFileData() {
+  fs.readFile('./example.txt', 'utf8', handleReadFileData);
+}
+// END: Using of Callback
+
+readFileData();
+
+const readFile = fs.readFile
 
 function readFileSync() {
   try {
