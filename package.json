@@ -1,15 +1,18 @@
 {
   "name": "nodejs-part-2",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/hw-lesson-14/main.js",
+    "dev": "ts-node --project tsconfig.json hw-lesson-14/main.ts"
   },
-  "keywords": [
-    "Node.js"
-  ],
+  "type": "module",
   "author": "Pavel Tseluiko",
   "license": "MIT",
-  "type": "module",
-  "description": ""
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.4"
+  }
 }
