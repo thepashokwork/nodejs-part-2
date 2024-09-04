@@ -4,7 +4,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/hw-lesson-14/main.js",
-    "dev": "node --loader ts-node/esm hw-lesson-14/main.ts"
+    "lesson-14": "node --loader ts-node/esm hw-lesson-14/main.ts",
+    "lesson-15": "node --loader ts-node/esm stream-lesson-15/main.ts"
   },
   "type": "module",
   "author": "Pavel Tseluiko",
