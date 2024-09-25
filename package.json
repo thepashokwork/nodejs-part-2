@@ -8,7 +8,8 @@
     "lesson-15": "node --loader ts-node/esm stream-lesson-15/main.ts",
     "lesson-16": "node --loader ts-node/esm events-lesson-16/main.ts",
     "lesson-17": "node --loader ts-node/esm http-lesson-17/main.ts",
-    "lesson-18": "node --loader ts-node/esm cluster-lesson-18/main.ts"
+    "lesson-18": "node --loader ts-node/esm cluster-lesson-18/main.ts",
+    "lesson-20": "node --loader ts-node/esm child-process-lesson-20/main.ts"
   },
   "type": "module",
   "author": "Pavel Tseluiko",
